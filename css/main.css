@@ -1,0 +1,88 @@
+body {
+	font-family: Verdana, sans-serif;
+}
+#header {
+	margin-top: 15px;
+	height: 45px;
+	width: 100%;
+	background-color: #c3d7df;
+}
+
+.title {
+	color: #6e9cad;
+	font-weight: bold;
+	font-size: 23px;
+	display: inline-block;
+	padding: 10px 0 0 209px;
+}
+
+.additems {
+	float:right;
+	margin-right: 209px;
+	height: 45px;
+	padding-top: 5px;
+}
+
+.add_item {
+	margin-top: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	color:#6e9cad;
+}
+
+.additems input{
+	width: 200px;
+	margin-top: 10px;
+}
+
+
+li {
+	border-bottom: 1px solid #eeefef;
+}
+
+#list {
+	margin: 0 178px 0 178px;
+}
+
+#directions {
+	font-style: italic;
+	font-size: 12px;
+	color: #709cad;
+	margin: 10px 0 10px 30px;
+}
+
+li input {
+	margin: 10px 0 10px 30px;
+	display: inline-block;
+}
+
+.button_off {
+	text-decoration: none;
+	width: 60px;
+	float: right;
+	margin-right: 30px;
+	background-color: #d4d6d7;
+	color: #FFFFFF;
+	border-radius: 4px;
+}
+
+.button_on {
+	text-decoration: none;
+	width: 60px;
+	float: right;
+	margin-right: 30px;
+	background-color: #6e9cad;
+	color: #FFFFFF;
+	border-radius: 4px;
+}
+
+button:focus {
+	outline:none;
+}
+
+p {
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #709cad;
+}
