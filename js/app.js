@@ -24,4 +24,8 @@ $(document).ready(function(){
 	$('div').on('click', '.delete', function(){
 		$('li').hide();
 	});
+	$('div').on('click', '.reset', function(){
+		$('li').hideClass();
+	});
+
 });
