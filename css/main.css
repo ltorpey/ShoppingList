@@ -23,22 +23,39 @@ body {
 	padding-top: 5px;
 }
 
-.add_item {
-	margin-top: 10px;
-	font-size: 12px;
-	font-weight: bold;
-	color:#6e9cad;
-}
 
 .additems input{
 	width: 200px;
 	margin-top: 10px;
 }
 
+.additems button {
+	text-decoration: none;
+	width: 100px;
+	background-color: #6e9cad;
+	color: #FFFFFF;
+	border-radius: 4px;
+	border: 0;
+}
+
+.additems button:hover { 
+	text-decoration: none;
+	width: 100px;
+	background-color: #4f8092;
+	color: #FFFFFF;
+	border-radius: 4px;
+	border: 0;
+}
 
 li {
 	border-bottom: 1px solid #eeefef;
+	margin: 10px 0 10px 30px;
+	font-size: 16px;
+	color: #709cad;
+	padding-bottom: 10px;
+
 }
+
 
 #list {
 	margin: 0 178px 0 178px;
@@ -49,40 +66,42 @@ li {
 	font-size: 12px;
 	color: #709cad;
 	margin: 10px 0 10px 30px;
+	border-bottom: 3px solid #eeefef;
+	padding-bottom: 5px;
+
 }
 
-li input {
-	margin: 10px 0 10px 30px;
-	display: inline-block;
+.complete {
+	text-decoration: line-through ;
+	color: darkgray;
+	list-style: none;
 }
 
-.button_off {
+#list button {
 	text-decoration: none;
-	width: 60px;
-	float: right;
-	margin-right: 30px;
-	background-color: #d4d6d7;
-	color: #FFFFFF;
-	border-radius: 4px;
-}
-
-.button_on {
-	text-decoration: none;
-	width: 60px;
-	float: right;
-	margin-right: 30px;
+	width: 100px;
 	background-color: #6e9cad;
 	color: #FFFFFF;
 	border-radius: 4px;
+	border: 0;
+	margin: 10px 0 0 30px;
+
 }
 
-button:focus {
-	outline:none;
+#list button:hover {
+	border: 1px solid red;
+	text-decoration: none;
+	width: 100px;
+	background-color: #4f8092
+	color: #FFFFFF;
+	border-radius: 4px;
+	border: 0;
+	margin: 10px 0 0 30px;
+	
 }
 
-p {
-	display: inline-block;
-	margin-left: 20px;
+.texts {
+	margin-left: 30px;
 	font-size: 16px;
 	color: #709cad;
 }

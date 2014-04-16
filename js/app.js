@@ -1,19 +1,27 @@
-$(document).ready(function() {
 
-// use enter to add list items
-
-	$(".new_item").keyup(function(event){
-		if(event.keyCode == 13) {
-			event.preventDefault();
-			$(".add_item").click();
-		};
-
-//add list items
-
-	$(".add_item").click(function(){
-		var txtbox = document.getElementById(".new_item");
-		var txtval = txtbox.value;
-		event.preventDefault();
+$(document).ready(function(){
+	$('.button').click(function(){
+		$('.items').append($('<li>', {
+			text: $('.texts').val()
+	}));
+		$('form').on('click', function(event){
+				event.preventDefault();
+				$('.texts').val('');
 	});
-
+	var new_Item = $('.texts').val();
+		if (new_Item == ''){
+			alert('Please Enter a Valid Item');
+			return $('li').last().remove();
+		}
+		else if (new_Item == ' '){
+			alert('Please Enter a Valid Item');
+			return $('li').last().remove();
+		}
+	});
+	$('ul').on('click', 'li', function(){
+		$(this).toggleClass('complete');
+	});
+	$('div').on('click', '.delete', function(){
+		$('li').hide();
+	});
 });

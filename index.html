@@ -13,38 +13,21 @@
 		<div class="title">My Shopping List
 		</div>
 		<div class="additems">
-			<input type="text" name="new_item" id="new_item"></input>
-			<button class="add_item" type="submit">ADD ITEM</button>
+				<form>
+					<input type="text" name="grocery" value="" class='texts' maxlength='20'>
+					<button type= 'submit' class ='button'>Add Item</button>
+				</form>
 		</div>
 	</div>
 	<div id="list">
-		<div id="directions">Check when completed</div>
-		<ul>
-		  <li><input type="checkbox" name="Item" value="Item 1"></input>
-			<p>Item 1</p>
-			<button class="button_off" type="submit">DELETE</button>	
-		  </li>
-		  <li><input type="checkbox" name="Item" value="Item 2" checked></input>
-			<p>Item 2</p>
-			<button class="button_on" type="submit">DELETE</button>
-		  </li>
-		  <li><input type="checkbox" name="Item" value="Item 3"></input>
-		  	<p>Item 3</p>
-		  	<button class="button_off" type="submit">DELETE</button>	
-		  </li>
-		  <li><input type="checkbox" name="Item" value="Item 4"></input>
-		  	<p>Item 4</p>
-		  	<button class="button_off" type="submit">DELETE</button>	
-		  </li>
-		  <li><input type="checkbox" name="Item" value="Item 5"></input>
-			<p>Item 5</p>
-			<button class="button_off" type="submit">DELETE</button>	
-		  </li>
-		  <li><input type="checkbox" name="Item" value="Item 6"></input>
-		  	<p>Item 6</p>
-		  	<button class="button_off" type="submit">DELETE</button>	
-		  </li>
-		</ul>
+		<div id="directions">Select when completed</div>
+		<ul class="items">
+				<li><p>Milk</p></li>
+				<li><p>Cheese Doodles</p></li>
+				<li><p>Coffee Cakes</p></li>
+				<li><p>Papaya<p></li>
+			</ul>
+		<button class='delete' value='Delete'>Clear List</button>	
 	</div>	
 
 
