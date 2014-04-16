@@ -25,7 +25,7 @@ $(document).ready(function(){
 		$('li').hide();
 	});
 	$('div').on('click', '.reset', function(){
-		$('li').hideClass();
+		$('li').removeClass();
 	});
 
 });
