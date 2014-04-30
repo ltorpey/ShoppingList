@@ -3,11 +3,11 @@ $(document).ready(function(){
 	$('.button').click(function(){
 		$('.items').append($('<li>', {
 			text: $('.texts').val()
-	}));
-	$('form').on('click', function(event){
-		event.preventDefault();
-		$('.texts').val('');
-	});
+		}));
+		$('form').on('click', function(event){
+			event.preventDefault();
+			$('.texts').val('');
+		});
 		var new_Item = $('.texts').val();
 		if (new_Item == ''){
 			alert('Please Enter a Valid Item');
